@@ -45,15 +45,33 @@ Select ONE Additional
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
 
+      
+
       // ======================== Button #1
+      var mem1Count = 0;
       $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
-        $("#p1").text("blah blah blah");
+
+         
+        if (mem1Count == 0)
+        {
+          $("#mem1").css("color", "purple");
+          $("#mem1").text("OneActs");
+          $("#p1").text("Getting to create a show alongside the friends I've made over the past four years was so much fun.");
+          mem1Count = 1; 
+        }
+        else if (mem1Count == 1)
+        {
+          $("#mem1").css("color", "purple");
+          $("#mem1").text("Memory 1");
+          $("#p1").text("More about this memory");
+          mem1Count = 0; 
+        }
       });
 
       // ======================== Button #2
       $("#mem2-button").click(function () {
         $("#mem2").css("color", "blue");
+        $("#mem2").text("Urinetown!");
         $("#p2").text("blah blah blah");
       });
 
@@ -63,7 +81,6 @@ Select ONE Additional
         $("#mem3").text("Coding Parties! 🎉");
         $("#p2").text("blah blah blah");
       });
-
 
     </script>
   </body>
