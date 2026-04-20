@@ -21,26 +21,32 @@ Select ONE Additional
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <button id="mem1-button">Memory #1</button>
-    <button id="mem2-button">Memory #2</button>
-    <button id="mem3-button">Memory #3</button>
-    <h1>My Top 3 Memories of <span>This Year</span></h1>
+    <button id="mem1-button">Game #1</button>
+    <button id="mem2-button">Game #2</button>
+    <button id="mem3-button">Game #3</button>
+    <button id="mem4-button">HonerableMention</button>
+    <h1>My Top 3 Mario Games
     <ol>
       <li>
-        <h3 id="mem1">Memory #1</h3>
-        <p id = p1>More about this memory.</p>
+        <h3 id="mem1">Game #1</h3>
+        <p id = p1>More about this Game.</p>
       </li>
 
       <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p id = p2>More about this memory.</p>
+        <h3 id="mem2">Game #2</h3>
+        <p id = p2>More about this Game.</p>
       </li>
 
       <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p id = p3>More about this memory</p>
+        <h3 id="mem3">Game #3</h3>
+        <p id = p3>More about this Game.</p>
       </li>
     </ol>
+
+    <ul>
+      <h3 id="honMen">Honerable Mention</h3>
+      <p id = p4>More about this Game.</p>
+    </ul>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
@@ -55,15 +61,15 @@ Select ONE Additional
         if (mem1Count == 0)
         {
           $("#mem1").css("color", "purple");
-          $("#mem1").text("OneActs");
-          $("#p1").text("Getting to create a show alongside the friends I've made over the past four years was so much fun.");
+          $("#mem1").text("SUPER MARIO ODYSSEY");
+          $("#p1").text("This game is my favorite video game of all time. The movement is such an upgrade from previous entries in the mainline Mario series, and offer so many more options for exploration, in adition to the capture mechanic expanding your moveset even further. Exploring the worlds of this game is nonstop fun, truly feeling like a globe-trotting adventure from start to finish. The developers managed to create an expirience that has become so resonant for so many people, including myself.");
           mem1Count = 1; 
         }
         else if (mem1Count == 1)
         {
           $("#mem1").css("color", "purple");
-          $("#mem1").text("Memory 1");
-          $("#p1").text("More about this memory");
+          $("#mem1").text("Game 1");
+          $("#p1").text("More about this Game");
           mem1Count = 0; 
         }
       });
@@ -71,15 +77,22 @@ Select ONE Additional
       // ======================== Button #2
       $("#mem2-button").click(function () {
         $("#mem2").css("color", "blue");
-        $("#mem2").text("Urinetown!");
-        $("#p2").text("blah blah blah");
+        $("#mem2").text("SUPER MARIO GALAXY");
+        $("#p2").text("While consensus on this game is slightly more devisive than Odyssey, I do not think that is a reflection of it's quality, simply a natural shift in perception with time. Mario galaxy is undoubtedly one of the most influencial games in the Mario franchise, and people certainly recognized that upon initial release. The problems began with its sequel, 'SUPER MARIO GALAXY 2,' in which developers doubled down on the often questioned more linear design of galaxy. The series was known for embracing it's expansive, adaptive environments players were meant to explore and discover secrets within. However Galaxy often places the player in obstacle courses -- albeit very well designed obstacle courses -- that, while fun, was a questioned departure for the franchise. With the release of the sequel, then followed by SUPER MARIO 3D LAND, and SUPER MARIO 3D WORLD, it started to feel like GALAXY 1 had sparked a shift in design priorities from Mario developers. And while the design formula in 3D LAND and WORLD was indeed less-preferable when compared to the more traditional openly designed stages we saw in MARIO 64 and MARIO SUNSHINE, GALAXY on its own is a masterclass in video game design. It's fast-paced with tight controls, some of the most flawless level and environment design, and a georgeous live soundtrack. SUPER MARIO GALAXY's linear stages are not a regression or a downgrade, they are a welcome change that makes SUPER MARI OGALAXY in isolation singlehandedly poignant, heartfelt and impactful Mario game of all time. ");
       });
 
       // ======================== Button #3
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
-        $("#mem3").text("Coding Parties! 🎉");
-        $("#p2").text("blah blah blah");
+        $("#mem3").text("MARIO BROS. WONDER");
+        $("#p3").text("blah blah blah");
+      });
+
+      // ======================== Button #4
+      $("#mem4-button").click(function () {
+        $("#honMen").css("color", "green");
+        $("#honMen").text("MARIO BROS. WONDER");
+        $("#p4").text("blah blah blah");
       });
 
     </script>
